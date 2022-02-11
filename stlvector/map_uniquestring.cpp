@@ -6,7 +6,7 @@ N<=10^5
 |S|<=100
 */
 
-#include <bits/stdc++.h> 
+#include </Library/Developer/CommandLineTools/usr/include/c++/v1/bits/stdc++.h>
 using namespace std; 
 int main() { 
     map<string,int> m;  // --> map declaration
