@@ -4,20 +4,28 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n,k;
     cin>>n;
     int a[n];
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    unordered_set<int> unique;
+    rotate(a,n);
     for(int i=0;i<n;i++){
-        unique.insert(a[i]);
+        cout<<a[i]<<" ";
     }
-    for(auto u: unique){
-        cout<<u<<" "<<endl;
-    }
-    
     return 0;
-
+}
+void rotate(int arr[], int n)
+{
+    int temp;
+    //int new_a[n];
+    
+    temp=arr[n-1];
+    
+    for(int i=n-1;i>0;i--){
+        arr[i]=arr[i-1];
+    }
+    arr[0]=temp;
+    
 }
